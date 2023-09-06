@@ -59,6 +59,7 @@ function generatePassword() {
     }
   }//while loop closing
   //May need to use loop to include loop for the math.random function.
+  //comcatenate strings and variables for the password.
   console.log("");
 }//function closing
 
