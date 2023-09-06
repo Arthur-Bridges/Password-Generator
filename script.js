@@ -37,6 +37,7 @@ function generatePassword() {
       }
     }
     }
+    //else for the conditioning for the ranges of characters.
     else {
       console.log("Number of characters aren't within range(8 <= x <= 128). Please try again.");
       continue;
