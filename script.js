@@ -21,10 +21,25 @@ function generatePassword() {
         var specialCharacters = confirm("Would you like to inlude special characters within the password? \n");
         
         if(lowerCase){
-
+          var lowerCase = prompt("Enter the lower case charactes: \n");
         }
         else{
-
+          //Not break, byt something else.
+          break;
+        }
+        if(upperCase){
+          var upperCase = prompt("Enter the upper case charactes: \n");
+        }
+        else{
+          //Not break, byt something else.
+          break;
+        }
+        if(specialCharacters){
+          var specialCharacters = prompt("Enter the special charactes: \n");
+        }
+        else{
+          //Not break, byt something else.
+          break;
         }
       }
       else {
@@ -43,6 +58,8 @@ function generatePassword() {
       continue;
     }
   }//while loop closing
+  //May need to use loop to include loop for the math.random function.
+  console.log("");
 }//function closing
 
 function writePassword() {
