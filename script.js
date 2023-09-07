@@ -9,6 +9,8 @@ function generatePassword() {
     var lowerCase;
     var upperCase;
     var specialCharacters;
+    var amountOfNumbers;
+    var randomNumber= [];
     var numOfCharacters = prompt("Enter the length of characters(Between 8 and 128 characters): \n");
     
     if(numOfCharacters >= 8){
@@ -24,32 +26,33 @@ function generatePassword() {
           var lowerCase = prompt("Enter the lower case charactes: \n");
         }
         else{
-          //Not break, byt something else.
+          //Not break, but something else.
           break;
         }
         if(upperCase){
           var upperCase = prompt("Enter the upper case charactes: \n");
         }
         else{
-          //Not break, byt something else.
+          //Not break, but something else.
           break;
         }
         if(specialCharacters){
           var specialCharacters = prompt("Enter the special charactes: \n");
         }
         else{
-          //Not break, byt something else.
+          //Not break, but something else.
           break;
         }
       }
-      else {
-        //skip the character types
-      }
+      //TODO fix code below (9/6/2023).
+      // else {
+      //   //skip the character types
+      // }
     
-      else {
-        console.log("Invalid input. Please try again.");
-        continue;
-      }
+      // else {
+      //   console.log("Invalid input. Please try again.");
+      //   continue;
+      // }
     }
     }
     //else for the conditioning for the ranges of characters.
@@ -59,7 +62,16 @@ function generatePassword() {
     }
   }//while loop closing
   //May need to use loop to include loop for the math.random function.
-  //comcatenate strings and variables for the password.
+  var amountOfNumbers = prompt("Enter the amount of numbers you would like to have in the password: \n");
+  if(){
+    for(i = 0; i <= amountOfNumbers ; i++){
+
+    }
+  }
+  else{
+    console.log("Input must include numbers");
+  }
+  //concatenate strings and variables for the password.
   console.log("");
 }//function closing
 
