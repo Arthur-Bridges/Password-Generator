@@ -13,7 +13,7 @@ function generatePassword() {
     var selectedChoices;
     var password = "";
     //TODO (9/8/2023)
-    //Plan is to create random versions of lower, upper, special containers then concantenate them at the end for password.
+    //Plan is to add all selected choices into container selectedChoices then randomize it after user choices.
     
     var numOfCharacters = prompt("Enter the length of characters(Between 8 and 128 characters): \n");
     
