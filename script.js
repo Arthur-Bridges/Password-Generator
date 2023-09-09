@@ -4,13 +4,17 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function generatePassword() {
   while(true){
+    var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_+=<>?";
     var numOfCharacters;
-    var characterTypes;
-    var lowerCase;
-    var upperCase;
-    var specialCharacters;
     var amountOfNumbers;
-    var randomNumber= [];
+    var characterTypes;
+    var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+    var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var specialCharacters = "!@#$%^&*()-_+=<>?";
+    var password = "";
+    //TODO (9/8/2023)
+    //Plan is to create random versions of lower, upper, special containers then concantenate them at the end for password.
+    
     var numOfCharacters = prompt("Enter the length of characters(Between 8 and 128 characters): \n");
     
     if(numOfCharacters >= 8){
@@ -23,21 +27,21 @@ function generatePassword() {
         var specialCharacters = confirm("Would you like to inlude special characters within the password? \n");
         
         if(lowerCase){
-          var lowerCase = prompt("Enter the lower case charactes: \n");
+          //within the container 'password' concantenate the lowercase to the password via random.
         }
         else{
           //Not break, but something else.
           break;
         }
         if(upperCase){
-          var upperCase = prompt("Enter the upper case charactes: \n");
+           //within the container 'password' concantenate the uppercase to the password via random.
         }
         else{
           //Not break, but something else.
           break;
         }
         if(specialCharacters){
-          var specialCharacters = prompt("Enter the special charactes: \n");
+           //within the container 'password' concantenate the variable specialCharacters to the password via random.
         }
         else{
           //Not break, but something else.
