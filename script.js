@@ -30,22 +30,22 @@ function generatePassword() {
           //within the container 'password' concantenate the lowercase to the password via random.
         }
         else{
-          //Not break, but something else.
-          break;
+          //Empty container of variable.
+         
         }
         if(upperCase){
            //within the container 'password' concantenate the uppercase to the password via random.
         }
         else{
-          //Not break, but something else.
-          break;
+          //Empty container of variable.
+         
         }
         if(specialCharacters){
            //within the container 'password' concantenate the variable specialCharacters to the password via random.
         }
         else{
-          //Not break, but something else.
-          break;
+          //Empty container of variable.
+         
         }
       }
       //TODO fix code below (9/6/2023).
