@@ -16,41 +16,43 @@ function generatePassword() {
     //Plan is to add all selected choices into container selectedChoices then randomize it after user choices.
     
     var numOfCharacters = prompt("Enter the length of characters(Between 8 and 128 characters): \n");
-    
+    do  {
     if(numOfCharacters >= 8 && numOfCharacters <= 128) {
     
       var characterTypes = confirm("Would you like to include character types(press 'ok' for yes)?: \n");
-
       if(characterTypes){
-        var lowerCase = confirm("Would you like to inlude lowercase characters within the password? \n");
-        var upperCase = confirm("Would you like to inlude uppercase characters within the password? \n");
+        var upperCase = confirm("Would you like to inlude upper case characters within the password? \n");
+        var lowerCase = confirm("Would you like to inlude lower case characters within the password? \n");
+        var numericCharacters = confirm("Would you like to inlude numeric characters within the password? \n");
         var specialCharacters = confirm("Would you like to inlude special characters within the password? \n");
-        var numericCharacters = 
         //concantenate strings if true into 'selectedChoices.
         
-        if(lowerCase){
-          //within the container 'password' concantenate the lowercase to the password via random.
-        }
-        else{
-          //Empty container of variable.
-         
-        }
         if(upperCase){
-           //within the container 'password' concantenate the uppercase to the password via random.
+          //within the container 'password' concantenate the lowercase to the password via random.
+          selectedChoices += upperCase;
         }
-        else{
-          //Empty container of variable.
-         
+        if(lowerCase){
+           //within the container 'password' concantenate the uppercase to the password via random.
+           selectedChoices += lowerCase;
+        }
+        if(numericCharacters){
+          selectedChoices += numericCharacters;
         }
         if(specialCharacters){
            //within the container 'password' concantenate the variable specialCharacters to the password via random.
+           selectedChoices += specialCharacters;
         }
-        else{
-          //Empty container of variable.
-         
-        }
-      }
+        break;
+    }
+    else if(!upperCase && !lowerCase && !numericCharacters && !specialCharacters) {
+      console.log("You must select at least one choice \n");
+      continue;
+    }
   }
+else {
+  console.log("The password length must be between 8 and 128, please try again. \n");
+}
+} while(true);
 
   //randomize selected choices
 
