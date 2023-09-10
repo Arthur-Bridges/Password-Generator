@@ -58,8 +58,8 @@ else {
 
   for (var i = 0; i < numOfCharacters; i++) {
     /*This line of code is where I will include the math.random and/or math.floor function
-    to randomize the selectedChoices then place the 
-    selectedChoices into the var password then return password.*/ 
+    to randomize selectedChoices then place the 
+    selectedChoices container into the container password then return password.*/ 
     password += selectedChoices;
   }
 }//function closing.
