@@ -9,6 +9,7 @@ A webpage that generates passwords based on user inputs.
 N/A
 
 ##Usage
+Deployed website is here: https://killorr.github.io/Password-Generator/
 
 N/A
 
